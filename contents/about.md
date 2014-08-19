@@ -1,6 +1,6 @@
 ---
 title: wowowow
-template: content.jade
+template: about.jade
 ---
 
 ## Hellooooo.
