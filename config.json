@@ -1,0 +1,18 @@
+{
+  "locals": {
+    "title": "Bare minimum wintersmith site"
+  },
+  "plugins": [
+    "wintersmith-livereload",
+    "wintersmith-browserify",
+    "wintersmith-jade",
+    "wintersmith-stylus"
+  ],
+  "jade": {
+    "pretty": true
+  },
+  "ignore": [
+    "**/.DS_Store",
+    "**/src"
+  ]
+}
