@@ -5,7 +5,6 @@
   "plugins": [
     "wintersmith-livereload",
     "wintersmith-browserify",
-    "wintersmith-jade",
     "wintersmith-stylus"
   ],
   "jade": {

@@ -1,5 +1,5 @@
 ---
-title: wowowow
+title: wowowowoo
 template: about.jade
 ---
 
