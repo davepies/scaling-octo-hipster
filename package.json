@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "jeet": "^5.3.0",
+    "nib": "^1.0.3",
     "wintersmith": "~2.1.0",
-    "wintersmith-livereload": "~0.1.1",
     "wintersmith-browserify": "~0.3.0",
+    "wintersmith-livereload": "~0.1.1",
     "wintersmith-stylus": "~0.4.1"
   }
 }
