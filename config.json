@@ -1,6 +1,6 @@
 {
   "locals": {
-    "title": "Bare minimum wintersmith site"
+    "title": "PeerBrief: Everyone's a headhunter"
   },
   "plugins": [
     "wintersmith-livereload",
@@ -13,7 +13,6 @@
   "ignore": [
     "**/.DS_Store",
     "**/src",
-    "styles/elements",
     "vendor/normalize*",
     "**/.bower.json"
   ]
