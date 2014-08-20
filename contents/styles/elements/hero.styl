@@ -6,26 +6,28 @@
 .hero-intro
   text-align: center
 
+  +tablet()
+    adjust-font-size-to: 14px
+
 .hero-callout
   font-weight: normal
-  font-size: 48px
+  adjust-font-size-to: 52px, 2
   letter-spacing: 0.04em
   text-align: center
   text-transform: uppercase
-  line-height: 0.75
   font-family: Gotham-Medium
 
 .hero-subline
   font-weight: normal
-  font-size: 22px
+  adjust-font-size-to: 22px
   letter-spacing: 0.05em
   line-height: 0
   font-family: Gotham-Light
 
 .hero-nav
   center(960px, 1em)
-  padding-top: 2em
-  padding-bottom: 7em
+  padding-leader: 1
+  padding-trailer: 5
 
 .hero-logo, .hero-login
   col(1/2)

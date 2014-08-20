@@ -5,3 +5,4 @@ build
 contents/vendor
 dist
 .DS_Store
+*.sublime-*

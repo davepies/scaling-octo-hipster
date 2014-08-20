@@ -1,24 +1,28 @@
 // How it works section
 .hiw
-  padding: 5em 0
-  margin: 5em 0
+  rhythm: 4 4 4 4
   background: white
   // edit()
 
+  // Reduce module size for tablet and below
+  +tablet()
+    adjust-font-size-to: 14px
+
+
 .hiw-title
-  font-size: 36px
+  adjust-font-size-to: 36px, 1
   color: #329BE2
   letter-spacing: 0.06em
   text-transform: uppercase
   text-align: center
+  trailer: 2, 36px
 
 .hiw-referrer
   font-family: Gotham-Light
-  font-size: 20px
+  adjust-font-size-to: 20px, 1.4
   color: #585858
   letter-spacing: 0.06em
   center(960px)
-  line-height: 1.5
 
 .hiw-step
   col(1/3)
@@ -26,13 +30,12 @@
 
   +tablet()
     stack(1em)
-    margin-bottom: 1em
+    trailer()
 
 .hiw-step-title
   font-family: Gotham-Medium
-  font-size: 22px
+  adjust-font-size-to: 22px, 1, 20px
   color: #262626
-  line-height: 26px
   letter-spacing: 1px
   text-transform: uppercase
-  margin-bottom: 0.5em
+  trailer(0.5)

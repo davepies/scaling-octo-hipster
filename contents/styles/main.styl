@@ -1,4 +1,6 @@
+@import 'mixins/settings'
 @import '../vendor/normalize-styl/_normalize'
+@import 'mixins/vertical-rhythm'
 @import '../node_modules/jeet/stylus/jeet'
 @import 'nib'
 @import '../node_modules/rupture/rupture'
@@ -13,9 +15,7 @@ body
   font-family: Gotham
   margin: 0
   padding: 0
-
-  +tablet()
-    font-size: 90%
+  font-size: font-size
 
 h1
   font-weight: 500
