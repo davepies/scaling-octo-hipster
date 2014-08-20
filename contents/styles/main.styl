@@ -1,7 +1,11 @@
 @import '../vendor/normalize-styl/_normalize'
 @import '../node_modules/jeet/stylus/jeet'
 @import 'nib'
+@import '../node_modules/rupture/rupture'
 @import 'elements'
+
+*
+  box-sizing: border-box
 
 body
   background: #329BE2
@@ -9,6 +13,9 @@ body
   font-family: Gotham
   margin: 0
   padding: 0
+
+  +tablet()
+    font-size: 90%
 
 h1
   font-weight: 500

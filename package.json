@@ -6,7 +6,9 @@
     "jquery": "$"
   },
   "browserify": {
-    "transform": [ "browserify-shim" ]
+    "transform": [
+      "browserify-shim"
+    ]
   },
   "dependencies": {
     "browserify-shim": "^3.6.0",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "gulp-cssshrink": "^0.1.4",
-    "gulp-uglify": "^0.3.1"
+    "gulp-uglify": "^0.3.1",
+    "rupture": "^0.3.0"
   }
 }

@@ -8,7 +8,6 @@
 .hiw-title
   font-size: 36px
   color: #329BE2
-  line-height: 43px
   letter-spacing: 0.06em
   text-transform: uppercase
   text-align: center
@@ -24,6 +23,10 @@
 .hiw-step
   col(1/3)
   text-align: center
+
+  +tablet()
+    stack(1em)
+    margin-bottom: 1em
 
 .hiw-step-title
   font-family: Gotham-Medium
