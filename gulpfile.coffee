@@ -33,7 +33,7 @@ gulp.task 'js', ->
     .pipe gulp.dest "#{DIST_DIR}/js"
 
 gulp.task 'copy', ['build'], (cb) ->
-  gulp.src ["#{BUILD_DIR}/about/*", "#{BUILD_DIR}/index.html", "#{BUILD_DIR}/vendor/**/*"], {base: "build"}
+  gulp.src ["#{BUILD_DIR}/about/*", "#{BUILD_DIR}/index.html"], {base: "build"}
     .pipe gulp.dest "#{DIST_DIR}"
   cb()
 
