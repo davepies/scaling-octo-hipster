@@ -23,6 +23,7 @@
     "wintersmith-stylus": "~0.4.1"
   },
   "devDependencies": {
+    "axis-css": "^0.1.8",
     "gulp-cssshrink": "^0.1.4",
     "gulp-uglify": "^0.3.1",
     "rupture": "^0.3.0",
