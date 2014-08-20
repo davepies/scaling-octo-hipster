@@ -2,4 +2,8 @@ doctype html
 html(lang='en')
   include partials/head
   block content
-    |what
+
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+  script
+    :js
+      window.jQuery || document.write(unescape('%3Cscript src="vendor/jquery-1.11.1/index.js"%3E%3C/script%3E'))

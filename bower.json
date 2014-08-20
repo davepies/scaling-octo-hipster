@@ -19,6 +19,7 @@
   ],
   "devDependencies": {
     "normalize-styl": "*",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "jquery-1.11.1": "http://code.jquery.com/jquery-1.11.1.js"
   }
 }
