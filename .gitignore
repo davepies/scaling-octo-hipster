@@ -3,3 +3,4 @@ lib
 examples/*/build
 build
 contents/vendor
+dist

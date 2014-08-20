@@ -12,6 +12,9 @@
   },
   "ignore": [
     "**/.DS_Store",
-    "**/src"
+    "**/src",
+    "styles/elements",
+    "vendor/normalize*",
+    "**/.bower.json"
   ]
 }
