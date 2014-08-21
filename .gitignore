@@ -1,8 +1,0 @@
-node_modules
-lib
-examples/*/build
-build
-contents/vendor
-dist
-.DS_Store
-*.sublime-*
