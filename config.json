@@ -1,6 +1,7 @@
 {
   "locals": {
-    "title": "PeerBrief: Everyone's a headhunter"
+    "title": "PeerBrief: Everyone's a headhunter",
+    "basePath": ""
   },
   "plugins": [
     "wintersmith-livereload",
@@ -14,6 +15,8 @@
     "**/.DS_Store",
     "**/src",
     "vendor/normalize*",
-    "**/.bower.json"
+    "**/.bower.json",
+    "styles/elements",
+    "styles/mixins"
   ]
 }

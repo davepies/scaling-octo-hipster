@@ -5,7 +5,7 @@ block content
   section.hero
     nav.hero-nav
       .hero-logo
-        img(src="/images/peerbrief-logo.png")
+        img(src="#{locals.basePath}/images/peerbrief-logo.png")
       .hero-login
         a.hero-login-btn(href="#") Log In
 
@@ -21,15 +21,15 @@ block content
 
     .hiw-referrer
       .hiw-step
-        img(src="images/step-one-cartoon.png")
+        img(src="#{locals.basePath}/images/step-one-cartoon.png")
         .hiw-step-title Step one
         | We’ll send you jobs that we think your friends can do. You refer the best candidates.
       .hiw-step
-        img(src="images/step-two-cartoon.png")
+        img(src="#{locals.basePath}/images/step-two-cartoon.png")
         .hiw-step-title Step two
         | If your friend gets the job, you get the cash! You’ll earn a referral fee of at least $1000.
       .hiw-step
-        img(src="images/step-three-cartoon.png")
+        img(src="#{locals.basePath}/images/step-three-cartoon.png")
         .hiw-step-title Step three
         | Build a team of headhunters. For every referral they make, we pay you 7.5%.
 
@@ -50,12 +50,12 @@ block content
     ul.partner-logos
       each name in ['33talent-logo.png', 'adobe-logo.png', 'jobadvisor-logo.png', 'mycause-logo.png', 'redballoon-logo.png']
         li
-          img(src="/images/logos/#{name}")
+          img(src="#{locals.basePath}/images/logos/#{name}")
 
   mixin team(name, pos)
     - var sanitisedName = name.toLowerCase().replace(/\s+/g, '')
     li.team-member
-      img(src="/images/team/#{sanitisedName}.jpg")
+      img(src="#{locals.basePath}/images/team/#{sanitisedName}.jpg")
       .team-member-name!= name
       .team-member-position!= pos
 

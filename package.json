@@ -24,8 +24,11 @@
   },
   "devDependencies": {
     "gulp-cssshrink": "^0.1.4",
+    "gulp-image": "^0.4.3",
     "gulp-uglify": "^0.3.1",
+    "gulp-uncss": "^0.4.5",
     "rupture": "^0.3.0",
-    "wintersmith-livereload": "^0.1.1"
+    "wintersmith-livereload": "^0.1.1",
+    "wintersmith-makerelative": "^1.0.0"
   }
 }
