@@ -37,10 +37,35 @@ block content
       a.hiw-cta-btn(href="#") Get started
       a.hiw-learn-more(href="#") Want to learn more?
 
-
   section.employers
     h1.section-heading For employers
     p Use the power of crowdsourcing to find your staff. It's free to join and it's free to post jobs! You can also use PeerBrief to manage your own internal referral programs.
 
     .employer-cta
       a.employer-cta-btn(href="#") Sign up now
+
+  section.partners
+    h1.section-heading A few of our awesome partners
+
+    ul.partner-logos
+      each name in ['33talent-logo.png', 'adobe-logo.png', 'jobadvisor-logo.png', 'mycause-logo.png', 'redballoon-logo.png']
+        li
+          img(src="/images/logos/#{name}")
+
+  mixin team(name, pos)
+    li.team-member
+      img(src="/images/team/#{name.toLowerCase().replace(/\s+/g, '')}.jpg")
+      .team-member-name!= name
+      .team-member-position!= pos
+
+  section.meet-the-team
+    h1.section-heading Meet the team
+
+    ul.team-members
+      +team('Rob Fanshawe', 'CEO')
+      +team('Kristian Kauper', 'CTO')
+      +team('Rajan Rauniyar', 'Back-end Developer')
+      +team('Jayphen Simpson', 'UX/UI Design')
+      +team('Luke Westland', 'Advisor')
+      +team('Alex Kerr', 'Consultant')
+      +team('Francis Coady', 'Head of Marcoms')
