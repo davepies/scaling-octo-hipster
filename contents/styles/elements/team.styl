@@ -5,6 +5,8 @@
   text-align: center
 
 .team-members
+  margin: 0
+  padding: 0
   list-style: none
   padding-leader: 1
   adjust-font-size-to: 14px
@@ -31,7 +33,10 @@
       shift(1/4)
 
   +mobile()
-    stack()
+    stack(align = 'center')
+
+    &:last-of-type
+      unshift()
 
 .team-member-name
   text-transform: uppercase
