@@ -20,7 +20,7 @@ paths =
     "#{BUILD_DIR}/index.html",
     "#{BUILD_DIR}/about/index.html"
   ],
-  dist: "dist"
+  dist: "dist/**/*"
 
 ghpages =
   push: true
@@ -59,7 +59,7 @@ gulp.task 'copy', ['build'], (cb) ->
     .pipe gulp.dest "#{DIST_DIR}"
   cb()
 
-gulp.task 'deploy', ->
+gulp.task 'deploy', (cb) ->
   gulp.src paths.dist
     .pipe deploy(ghpages)
 
