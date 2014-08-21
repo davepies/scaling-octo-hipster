@@ -5,7 +5,7 @@
   // edit()
 
   // Reduce module size for tablet and below
-  +tablet()
+  +below(600px)
     adjust-font-size-to: 14px
     center(600px)
 
@@ -30,7 +30,7 @@
   text-align: center
   position: relative
 
-  +tablet()
+  +below(700px)
     stack(1em)
     trailer()
 
@@ -54,7 +54,7 @@
 
   + a
     adjust-font-size-to: 14px
-    +tablet()
+    +below(600px)
       btn-secondary()
       &:hover
         color: darken(grey, 20%)
