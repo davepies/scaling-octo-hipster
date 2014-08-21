@@ -5,6 +5,7 @@ cssshrink       = require 'gulp-cssshrink'
 uglify          = require 'gulp-uglify'
 uncss           = require 'gulp-uncss'
 image           = require 'gulp-image'
+deploy          = require 'gulp-gh-pages'
 
 BUILD_DIR       = 'build'
 CONTENT_DIR     = 'contents'
@@ -18,7 +19,11 @@ paths =
   pages: [
     "#{BUILD_DIR}/index.html",
     "#{BUILD_DIR}/about/index.html"
-  ]
+  ],
+  dist: "dist"
+
+ghpages =
+  push: true
 
 gulp.task 'clean', ->
   gulp.src([BUILD_DIR, DIST_DIR], { read: false })
@@ -53,6 +58,10 @@ gulp.task 'copy', ['build'], (cb) ->
   gulp.src paths.pages.concat(paths.images), {base: "build"}
     .pipe gulp.dest "#{DIST_DIR}"
   cb()
+
+gulp.task 'deploy', ->
+  gulp.src paths.dist
+    .pipe deploy(ghpages)
 
 # We also want to run imageoptim
 # We also want to deploy I guess
