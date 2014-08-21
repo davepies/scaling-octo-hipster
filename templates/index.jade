@@ -39,7 +39,7 @@ block content
 
   section.employers
     h1.section-heading For employers
-    p Use the power of crowdsourcing to find your staff. It's free to join and it's free to post jobs! You can also use PeerBrief to manage your own internal referral programs.
+    p Use the power of crowdsourcing to find your staff. It's free to join and it's free to post jobs! You can also use PeerBrief to <a href="#">supercharge your internal referral programme.</a>
 
     .employer-cta
       a.employer-cta-btn(href="#") Sign up now
@@ -70,3 +70,80 @@ block content
       +team('Luke Westland', 'Advisor')
       +team('Alex Kerr', 'Consultant')
       +team('Francis Coady', 'Head of Marcoms')
+
+  section.contact
+    .contact-inner
+      h1.section-heading Contact us
+
+      .location
+        img(src="#{locals.basePath}/images/map.png")
+
+        .location-address
+          strong HQ
+          span Level 2 Suite 201
+          span 21 Oxford St
+          span Darlinghurst, NSW 2010
+          span P. +61 (0)2 8003 3186
+
+      .contact-form
+        .fields
+          label(for="your-name") Your name
+          input(type="text")
+        .fields
+          label(for="your-email") Email
+          input(type="email")
+        .fields
+          label(for="message") What would you like to say?
+          textarea(rows="3")
+
+        .fields
+          input(type="submit", value="Send")
+
+  section.footer
+    .footer-inner
+      .footer-links
+        img(src="#{locals.basePath}/images/peerbrief-logo.png", height="20")
+        p PeerBrief is a revolutionary crowd sourcing referral platform that lets you earn cash from one of the most valuable assets you have — your network.
+      .footer-links
+        .footer-heading Company
+        ul
+          li
+            a(href="#") Our Story
+          li
+            a(href="#") Meet the team
+          li
+            a(href="#") Contact us
+          li
+            a(href="#") Advisory
+          li
+            a(href="#") Partners
+          li
+            a(href="#") Blog
+          li
+            a(href="#") FAQ
+      .footer-links
+        .footer-heading Help
+        ul
+          li
+            a(href="#") Become a referrer
+          li
+            a(href="#") Hire talent
+          li
+            a(href="#") How it works
+          li
+            a(href="#") PeerBrief enterprise
+          li
+            a(href="#") Support
+          li
+            a(href="#") Privacy Policy
+          li
+            a(href="#") Terms & Conditions
+      .footer-links
+        .footer-heading Members
+        ul
+          li
+            a(href="#") Referrer Login
+          li
+            a(href="#") Employer Login
+          li
+            a(href="#") Browse Briefs
