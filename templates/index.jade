@@ -53,12 +53,13 @@ block content
           img(src="/images/logos/#{name}")
 
   mixin team(name, pos)
+    - var sanitisedName = name.toLowerCase().replace(/\s+/g, '')
     li.team-member
-      img(src="/images/team/#{name.toLowerCase().replace(/\s+/g, '')}.jpg")
+      img(src="/images/team/#{sanitisedName}.jpg")
       .team-member-name!= name
       .team-member-position!= pos
 
-  section.meet-the-team
+  section.team
     h1.section-heading Meet the team
 
     ul.team-members
