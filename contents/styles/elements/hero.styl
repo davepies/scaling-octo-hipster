@@ -1,7 +1,24 @@
-@import btn
-
 .hero
-  min-height: 500px
+  min-height: 600px
+  background: url('/images/people-bg.jpg') center center no-repeat
+  background-size: cover
+  color: white
+  position: relative
+
+  *
+    z-index: 3
+    position: relative
+
+  &:after
+    z-index: 2
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    position: absolute
+    background: alpha(blue, 85%)
+    content: ""
+    pointer-events: none
 
 .hero-intro
   text-align: center
@@ -36,4 +53,19 @@
   text-align: right
 
 .hero-login-btn
-  @extend .btn
+  btn-secondary(#7EC8F2, #D4F0FF)
+  rhythm: 0 0.25 0.25 0
+
+.hero-cta
+  center(400px)
+  text-align: center
+  padding-leader: 3
+
+.hero-cta-btn
+  btn(#212121)
+  adjust-font-size-to: 18px
+  letter-spacing: 0.1em
+  font-weight: 400
+  &:hover
+    background: darken(blue, 70%)
+

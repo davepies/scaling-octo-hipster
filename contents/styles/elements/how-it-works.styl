@@ -1,12 +1,13 @@
 // How it works section
 .hiw
-  rhythm: 4 4 4 4
+  rhythm: 2 2 0 0
   background: white
   // edit()
 
   // Reduce module size for tablet and below
   +tablet()
     adjust-font-size-to: 14px
+    center(600px)
 
 
 .hiw-title
@@ -27,6 +28,7 @@
 .hiw-step
   col(1/3)
   text-align: center
+  position: relative
 
   +tablet()
     stack(1em)
@@ -39,3 +41,30 @@
   letter-spacing: 1px
   text-transform: uppercase
   trailer(0.5)
+
+.hiw-cta
+  center(960px)
+  text-align: center
+  leader(2)
+
+.hiw-cta-btn
+  btn()
+  adjust-font-size-to: 18px
+  letter-spacing: 0.1em
+  font-weight: 400
+  trailer: 0.5
+  center(300px)
+
+  + a
+    adjust-font-size-to: 14px
+    +tablet()
+      btn-secondary()
+      &:hover
+        color: darken(grey, 20%)
+
+    &:before
+      // Insert a line break
+      content: ""
+      display: block
+      height: 0
+      width: 0

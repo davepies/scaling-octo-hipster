@@ -1,11 +1,35 @@
-.btn
-  padding: 0.5em 1em
+// General button style. Needs refactoring to be more modular!
+btn-shared(weight=500)
   text-decoration: none
   cursor: pointer
-  font-weight: 500
-  font-size: 14px
+  font-weight: weight
+  adjust-font-size-to: 14px
   text-transform: uppercase
-  color: white
   border-radius: 3px
-  background: #7EC8F2
   display: inline-block
+  transition: all 0.2s
+
+btn(color=blue)
+  btn-shared()
+  padding: 1em
+  color: white
+  background: color
+  &:hover
+    color: white
+    background: darken(color, 20%)
+
+btn-secondary(background=silver, color=grey)
+  btn-shared()
+  padding: 1em 1.5em
+  background: background
+  color: color
+  &:hover
+    if dark(background)
+      background: lighten(background, 10%)
+    else
+      background: darken(background, 10%)
+
+    if dark(color)
+      color: darken(color, 20%)
+    else
+      color: lighten(color, 20%)

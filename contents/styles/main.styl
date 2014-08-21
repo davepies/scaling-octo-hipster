@@ -1,17 +1,15 @@
+@import '../node_modules/rupture/rupture'
 @import 'mixins/settings'
 @import '../vendor/normalize-styl/_normalize'
 @import 'mixins/vertical-rhythm'
 @import '../node_modules/jeet/stylus/jeet'
 @import 'nib'
-@import '../node_modules/rupture/rupture'
 @import 'elements'
 
 *
   box-sizing: border-box
 
 body
-  background: #329BE2
-  color: white
   font-family: Gotham
   margin: 0
   padding: 0
@@ -19,3 +17,8 @@ body
 
 h1
   font-weight: 500
+
+a
+  color: link-color
+  &:hover
+    color: highlight-color
