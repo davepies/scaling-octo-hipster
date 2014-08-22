@@ -63,8 +63,6 @@ gulp.task 'gh', (cb) ->
   gulp.src paths.dist
     .pipe deploy(ghpages)
 
-# We also want to run imageoptim
-# We also want to deploy I guess
 gulp.task 'min', ['styles', 'images', 'js']
 
 gulp.task 'dist', ['copy'], ->

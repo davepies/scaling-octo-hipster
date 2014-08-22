@@ -1,9 +1,12 @@
 .hero
-  min-height: 600px
+  min-height: -rhythm(27)
   background: url('../images/people-bg.jpg') center center no-repeat
   background-size: cover
   color: white
   position: relative
+
+  +below(800px)
+    adjust-font-size-to: 14px
 
   *
     z-index: 3
