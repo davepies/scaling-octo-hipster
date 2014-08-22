@@ -23,8 +23,8 @@ paths =
     "#{BUILD_DIR}/js/foot.js"
   ]
   styles: [
-    "#{BUILD_DIR}/styles/main.css",
-    "contents/vendor/css-modal/build/modal.css"
+    "contents/vendor/css-modal/build/modal.css",
+    "#{BUILD_DIR}/styles/main.css"
   ]
   images: "#{BUILD_DIR}/images/**/*"
   pages: [
