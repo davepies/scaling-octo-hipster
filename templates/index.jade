@@ -70,16 +70,31 @@ block content
       .team-member-position!= pos
 
   section.team
-    h1.section-heading Meet the team
 
-    ul.team-members
-      +team('Rob Fanshawe', 'CEO')
-      +team('Kristian Kauper', 'CTO')
-      +team('Rajan Rauniyar', 'Back-end Developer')
-      +team('Jayphen Simpson', 'UX/UI Design')
-      +team('Luke Westland', 'Advisor')
-      +team('Alex Kerr', 'Consultant')
-      +team('Francis Coady', 'Head of Marcoms')
+    .team-carousel
+      div
+        h1.section-heading Meet the team
+        ul.team-members.core
+          +team('Rob Fanshawe', 'CEO')
+          +team('Kristian Kauper', 'CTO')
+          +team('Rajan Rauniyar', 'Back-end Developer')
+          +team('Jayphen Simpson', 'UX/UI Design')
+          +team('Luke Westland', 'Advisor')
+          +team('Alex Kerr', 'Consultant')
+          +team('Francis Coady', 'Head of Marcoms')
+
+        .team-controls
+          a(href="#") Meet our advisors
+
+      div
+        h1.section-heading Meet our advisors
+        ul.team-members.advisors
+          +team('Kristian Kauper', 'CTO')
+          +team('Jayphen Simpson', 'UX/UI Design')
+          +team('Francis Coady', 'Head of Marcoms')
+
+        .team-controls
+          a(href="#") Meet the team
 
   section.contact
     .contact-inner

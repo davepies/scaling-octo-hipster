@@ -10,11 +10,18 @@
   list-style: none
   padding-leader: 1
   adjust-font-size-to: 14px
+  background: white
+  overflow: hidden
 
 .team-member
-  col(1/4, cycle: 4)
   trailer: 1.5, 14px
   color: lighten(black, 30%)
+
+.advisors .team-member
+  col(1/3)
+
+.core .team-member
+  col(1/4, cycle: 4)
 
   +desktop()
     &:nth-child(4n) ~ li
@@ -45,5 +52,8 @@
   font-weight: 500
   leader: 0.25, 14px
 
-.some-junk-styles
-  background: green
+.team-controls
+  clear: both
+
+  a
+    btn-secondary()
