@@ -9,5 +9,5 @@ module.exports = ->
   # Simple switch between carousel pages
   teamControls = $('.team-controls')
   teamControls.bind 'click', (e) ->
-    e.preventDefault()
+    # e.preventDefault()
     carousel.next()

@@ -1,0 +1,18 @@
+section.modal--show.invite-modal#invite-modal(tabindex="-1", role="dialog", aria-labelledby="modal-label", aria-hidden="true")
+  .modal-inner
+    header.modal-label
+      h2 Want early access?
+      p We're in beta mode for the next few weeks, but you can get early access below.
+    .modal-content
+      form
+        .fields
+          label(for="your-name") Your name
+          input(type="text")
+        .fields
+          label(for="your-email") Email
+          input(type="email")
+        .fields
+          input(type="submit", value="Let me in!")
+
+
+  a(href="#!", class="modal-close", data-close="Close" data-dismiss="modal") x

@@ -10,5 +10,6 @@ module.exports = ->
   pauseVid = ->
     player.api 'pause'
 
-  $(document).on('cssmodal:show', playVid)
+  $('.hiw-vid a').bind 'click', ->
+    playVid()
   $(document).on('cssmodal:hide', pauseVid)

@@ -14,7 +14,7 @@ block content
       h2.hero-subline Invite friends, find them jobs, earn money.
 
     .hero-cta
-      a.hero-cta-btn(href="#") Request your invite
+      a.hero-cta-btn(href="#invite-modal") Request your invite
 
   section.hiw
     h1.hiw-title How does it work?
@@ -71,7 +71,7 @@ block content
 
   section.team
 
-    .team-carousel
+    .team-carousel#carousel
       div
         h1.section-heading Meet the team
         ul.team-members.core
@@ -84,7 +84,7 @@ block content
           +team('Francis Coady', 'Head of Marcoms')
 
         .team-controls
-          a(href="#") Meet our advisors
+          a(href="#carousel") Meet our advisors
 
       div
         h1.section-heading Meet our advisors
@@ -94,7 +94,7 @@ block content
           +team('Francis Coady', 'Head of Marcoms')
 
         .team-controls
-          a(href="#") Meet the team
+          a(href="#carousel") Meet the team
 
   section.contact
     .contact-inner
@@ -174,3 +174,4 @@ block content
             a(href="#") Browse Briefs
 
   include partials/vid-modal
+  include partials/invite

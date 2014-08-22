@@ -20,7 +20,7 @@ btn(color=blue)
     color: white
     background: darken(color, 20%)
 
-btn-secondary(background=silver, color=grey)
+btn-secondary(background=silver, color=grey, alpha = false)
   btn-shared()
   padding: 1em 1.5em
   background: background
@@ -35,3 +35,6 @@ btn-secondary(background=silver, color=grey)
       color: darken(color, 20%)
     else
       color: lighten(color, 20%)
+
+    if alpha == true
+      background: alpha(background, 90%)
