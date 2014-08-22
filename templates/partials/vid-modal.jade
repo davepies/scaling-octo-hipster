@@ -1,6 +1,8 @@
+script(src="https://f.vimeocdn.com/js/froogaloop2.min.js")
 section.modal--show.vid-modal#vid-modal(tabindex="-1", role="dialog", aria-labelledby="modal-label", aria-hidden="true")
   .modal-inner
-    header.modal-label hi
-    .modal-content hello
+    header.modal-label How it works
+    .modal-content
+      | <iframe id="hiw-vid" src="http://player.vimeo.com/video/61742017?title=0&byline=0&portrait=0&api=1" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
   a(href="#!", class="modal-close", data-close="Close" data-dismiss="modal") x

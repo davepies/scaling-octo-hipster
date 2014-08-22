@@ -1,10 +1,12 @@
 {
   "browser": {
     "jquery": "./contents/vendor/jquery-1.11.1/index.js",
-    "modal": "./contents/vendor/css-modal/modal.js"
+    "modal": "./contents/vendor/css-modal/modal.js",
+    "froogaloop": "./contents/vendor/vimeo/froogaloop.js"
   },
   "browserify-shim": {
-    "jquery": "$"
+    "jquery": "$",
+    "froogaloop": "$f"
   },
   "browserify": {
     "transform": [
