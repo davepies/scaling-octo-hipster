@@ -6,6 +6,7 @@ uglify          = require 'gulp-uglify'
 uncss           = require 'gulp-uncss'
 image           = require 'gulp-image'
 deploy          = require 'gulp-gh-pages'
+concat          = require 'gulp-concat'
 
 BUILD_DIR       = 'build'
 CONTENT_DIR     = 'contents'
@@ -13,13 +14,19 @@ TEMPLATES_DIR   = 'templates'
 DIST_DIR        = 'dist'
 
 paths =
-  scripts: "#{BUILD_DIR}/js/main.js",
-  styles: "#{BUILD_DIR}/styles/main.css"
+  scripts: [
+    "#{BUILD_DIR}/js/main.js",
+    "#{BUILD_DIR}/js/foot.js"
+  ]
+  styles: [
+    "#{BUILD_DIR}/styles/main.css",
+    "contents/vendor/css-modal/build/modal.css"
+  ]
   images: "#{BUILD_DIR}/images/**/*"
   pages: [
     "#{BUILD_DIR}/index.html",
     "#{BUILD_DIR}/about/index.html"
-  ],
+  ]
   dist: "dist/**/*"
 
 ghpages =
@@ -40,7 +47,12 @@ gulp.task 'default', ->
 
 gulp.task 'styles', ->
   gulp.src paths.styles
-    .pipe uncss({html: paths.pages})
+    .pipe concat 'main.css'
+    .pipe uncss(
+      html: paths.pages,
+      ignore: [/modal/, /overlay/]
+      ignoreSheets: [/fonts.googleapis/, /modal.css/]
+    )
     .pipe cssshrink()
     .pipe gulp.dest "#{DIST_DIR}/styles"
 

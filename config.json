@@ -15,7 +15,9 @@
     "**/.DS_Store",
     "**/src",
     "vendor/normalize*",
-    "**/.bower.json",
+    "**/.bower.json"
+  ],
+  "ignoreDeploy": [
     "styles/elements",
     "styles/mixins"
   ]

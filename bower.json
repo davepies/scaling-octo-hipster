@@ -20,5 +20,8 @@
   "devDependencies": {
     "normalize-styl": "*",
     "jquery-1.11.1": "http://code.jquery.com/jquery-1.11.1.js"
+  },
+  "dependencies": {
+    "css-modal": "~1.1.8"
   }
 }
