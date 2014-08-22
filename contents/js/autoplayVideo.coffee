@@ -11,7 +11,3 @@ pauseVid = ->
 
 $(document).on('cssmodal:show', playVid)
 $(document).on('cssmodal:hide', pauseVid)
-
-$('a[href*=modal]').bind 'click', (e) ->
-  e.preventDefault()
-  super()

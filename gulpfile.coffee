@@ -13,6 +13,10 @@ CONTENT_DIR     = 'contents'
 TEMPLATES_DIR   = 'templates'
 DIST_DIR        = 'dist'
 
+config =
+  deploy: "config.deploy.json"
+  dev:    "config.json"
+
 paths =
   scripts: [
     "#{BUILD_DIR}/js/main.js",
@@ -37,12 +41,14 @@ gulp.task 'clean', ->
     .pipe clean()
 
 gulp.task 'build', ['clean'], (cb) ->
+  runWintersmith.settings.configFile = config.deploy
   runWintersmith.build ->
     console.log "Wintersmith has finished building!"
 
     cb()
 
 gulp.task 'default', ->
+  runWintersmith.settings.configFile = config.dev
   runWintersmith.preview()
 
 gulp.task 'styles', ->
