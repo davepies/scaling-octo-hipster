@@ -79,7 +79,7 @@ gulp.task 'copy', ['build'], (cb) ->
     .pipe gulp.dest "#{DIST_DIR}"
   cb()
 
-gulp.task 'gh', (cb) ->
+gulp.task 'gh', ['build'], () ->
   gulp.src paths.dist
     .pipe deploy(ghpages)
 
@@ -88,3 +88,4 @@ gulp.task 'min', ['styles', 'images', 'js']
 gulp.task 'dist', ['copy'], ->
   gulp.start 'min'
 
+gulp.task 'deploy', ['build', 'gh']
